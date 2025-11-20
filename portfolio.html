@@ -1,0 +1,208 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <title>Damiel Portolio</title>
+    <link rel="stylesheet" href="">
+    <style>
+
+      header{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:75px;
+        background-color:rgb(210, 206, 206);
+
+        
+      }
+      .rd{
+        position:relative;
+        margin-left:20px;
+        text-decoration:underline;
+      }
+      nav{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        flex-direction:row;
+        margin-right:20px;
+
+      }
+      a{
+        margin-right:6px;
+      }
+      main{
+        background: linear-gradient(to right, rgb(144, 203, 144), rgb(110, 110, 186));
+        font-family:roboto,arial;
+        padding-top:90px;
+        padding-bottom:40px;
+      }
+      .img{
+        
+        display:flex;
+        justify-content:center;
+        position:absolute;
+        left:270px;
+        height:75px;
+        background-color:transparent;
+
+      }
+      .about-me {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+      
+      }
+      .grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        justify-content: space-evenly;
+        
+      }
+      .para {
+        border: 2px solid black;
+        padding: 5px;
+        width:300px; 
+        height:300px;
+        border-radius:5px;
+        background-color:rgb(197, 196, 196);
+        color:black;
+       
+        display:flex;
+        justify-content:flex-end;
+      }
+      .img-container{
+        width:200px;
+        height:300px;
+        border: 1px solid black;
+        margin-bottom: 25px;
+        border-radius:5px;
+      
+      }
+      .pic{
+        width:100%;
+        height:100%;
+        object-fit:fill;
+
+      }
+      .btn{
+        margin-top:5%;
+        padding: 15px;
+        font-size: 15px;
+        border-radius:10px;
+        
+      }
+      .title1{
+        display:flex;
+        justify-content:center;
+        margin-bottom:0%;
+        margin-top:5%;
+
+      }
+      .projects{
+        display:flex;
+        justify-content:space-around;
+        gap:20px;
+        flex-wrap:wrap;
+      }
+      .project{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:1px;
+      }
+      .title{
+        font-weight:bold;
+        font-size:18px;
+        color:black;
+        margin:0;
+        padding:0;
+      }
+      .projects a{
+        position:relative;
+        display:block;
+        width:200px;
+        height:150px;
+        background-size:cover;
+        background-position:center;
+        text-align:center;
+        line-height:150px;
+        color:black;
+        font-weight:bold;
+        overflow:hidden;
+        margin-bottom:0;
+      }
+     
+      .youtube-bg{
+        background:url("images/YT-BG.png");
+        margin-top:0;
+      
+        
+       
+      }
+      .youtube-clone{
+        background:url("images/YT2.png");
+     
+      }
+      
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+      <h1 class="rd">Rice Development</h1>
+      </div>
+      <div class="img">
+      <img src="images/images.jpeg" alt="a picture of me">
+      </div>
+      <div class="right-section">
+      <nav>
+        <div><a href="">Home</a></div>
+        <div><a href="">About</a></div>
+        <div><a href="">Services</a></div>
+        <div><a href="">Experience</a></div>
+        <div><a href="">Contact</a></div>
+      </nav>
+      </div>
+    </header>
+    <main>
+      
+      <div class="about-me">
+        <h1>About Me</h1>
+        <div class="grid">
+        <div class="img-container">
+          <img class="pic" src="images/IMG_0612.JPG" alt="a picture of me 2"/>
+      </div>
+        <div class="para">
+        <p>I am a Software Engineer based in Atlanta GA. I am proficient in both Frontend development and Backend development. I have extensive knowledge in HTML, CSS, and Javascript. As a software engineer, I aspire to help bring creative projects to life and demonstrate my commitment to developing world-class software solutions for your company.</p>
+        </div>
+        </div>
+        <button class="btn"><a href="">Download My Resume</a></button>
+      </div>
+      <section>
+        <h1 class="title1">My Projects</h1>
+        <div class="projects">
+          <div class="project">
+        <div class="title"><a href="background-picker/index.html" target="_blank">Youtube Background Picker</a></div>
+      <a class="youtube-bg" href=""></a>
+      </div>
+      <div class="project">
+        <div class="title"><a href="youtube-clone/youtube.html" target="_blank">Youtube Clone Page</a></div>
+      <a class="youtube-clone" href=""></a>
+      </div>
+      <div class="project">
+        <div class="title"><a href="" target="_blank">Calculator</a></div>
+      <a class="calc" href=""></a>
+      </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
